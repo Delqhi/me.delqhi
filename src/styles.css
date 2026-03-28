@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "tailwindcss";
+
+:root {
+  --gh-bg: #ffffff;
+  --gh-bg-secondary: #f6f8fa;
+  --gh-border: #d0d7de;
+  --gh-text: #1F2328;
+  --gh-text-secondary: #656d76;
+  --gh-link: #0969da;
+  --gh-btn-bg: #f6f8fa;
+  --gh-btn-border: rgba(31, 35, 40, 0.15);
+  --gh-btn-hover: #f3f4f6;
+  --gh-header-bg: #24292f;
+  --gh-green: #1f883d;
+  --gh-green-hover: #1a7f37;
+  --gh-muted: #f6f8fa;
+}
+
+:root.dark {
+  --gh-bg: #0d1117;
+  --gh-bg-secondary: #161b22;
+  --gh-border: #30363d;
+  --gh-text: #c9d1d9;
+  --gh-text-secondary: #8b949e;
+  --gh-link: #58a6ff;
+  --gh-btn-bg: #21262d;
+  --gh-btn-border: rgba(240, 246, 252, 0.1);
+  --gh-btn-hover: #30363d;
+  --gh-header-bg: #010409;
+  --gh-green: #238636;
+  --gh-green-hover: #2ea043;
+  --gh-muted: #161b22;
+}
+
+@theme {
+  --color-gh-bg: var(--gh-bg);
+  --color-gh-bg-secondary: var(--gh-bg-secondary);
+  --color-gh-border: var(--gh-border);
+  --color-gh-text: var(--gh-text);
+  --color-gh-text-secondary: var(--gh-text-secondary);
+  --color-gh-link: var(--gh-link);
+  --color-gh-btn-bg: var(--gh-btn-bg);
+  --color-gh-btn-border: var(--gh-btn-border);
+  --color-gh-btn-hover: var(--gh-btn-hover);
+  --color-gh-header-bg: var(--gh-header-bg);
+  --color-gh-green: var(--gh-green);
+  --color-gh-green-hover: var(--gh-green-hover);
+  --color-gh-muted: var(--gh-muted);
+}
+
+body {
+  background-color: var(--color-gh-bg);
+  color: var(--color-gh-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Material Icons adjustment for GitHub look */
+.material-icons {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

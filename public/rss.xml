@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Jeremy Schulze</title>
+<description>Senior AI &amp; Software Engineer focused on building enterprise-grade, scalable AI systems and high-performance web applications.</description>
+<link>https://jeremyschulze.delqhi.com/</link>
+<item>
+<title>Building Enterprise Angular Apps in 2026</title>
+<link>https://jeremyschulze.delqhi.com/blog/building-enterprise-angular-apps</link>
+<guid isPermaLink="true">https://jeremyschulze.delqhi.com/blog/building-enterprise-angular-apps</guid>
+<description>The landscape of Angular development has evolved significantly. In this article, we explore the best practices for building scalable, maintainable enterprise applications using the latest features in Angular 21, including zoneless change detection and signals.</description>
+<pubDate>Mon, 23 Mar 2026 12:00:00 GMT</pubDate>
+</item>
+<item>
+<title>The Minimalist Developer Portfolio</title>
+<link>https://jeremyschulze.delqhi.com/blog/minimalist-developer-portfolio</link>
+<guid isPermaLink="true">https://jeremyschulze.delqhi.com/blog/minimalist-developer-portfolio</guid>
+<description>Inspired by Peter Steinberger and the Minimax enterprise UI, I decided to rebuild my personal website. Here is why a GitHub-like interface might be the ultimate developer portfolio design—combining familiarity, utility, and a clean aesthetic.</description>
+<pubDate>Sun, 15 Mar 2026 12:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Deploying to Cloudflare Pages for Free</title>
+<link>https://jeremyschulze.delqhi.com/blog/deploying-cloudflare-pages</link>
+<guid isPermaLink="true">https://jeremyschulze.delqhi.com/blog/deploying-cloudflare-pages</guid>
+<description>A step-by-step guide on how to host your personal blog and portfolio on Cloudflare Pages for absolutely free, including setting up custom domains and automated deployments from your Git repository.</description>
+<pubDate>Sat, 28 Feb 2026 12:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Why I Prefer Tailwind CSS for Component Libraries</title>
+<link>https://jeremyschulze.delqhi.com/blog/tailwind-css-component-libraries</link>
+<guid isPermaLink="true">https://jeremyschulze.delqhi.com/blog/tailwind-css-component-libraries</guid>
+<description>Tailwind CSS has become the industry standard for styling web applications. In this post, I discuss why utility-first CSS is superior for building reusable component libraries and maintaining design consistency across large teams.</description>
+<pubDate>Mon, 12 Jan 2026 12:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

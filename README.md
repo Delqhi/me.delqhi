@@ -39,6 +39,13 @@ npm run build
 npm test
 ```
 
+## Documentation standard
+
+- `AGENTS.md` — repo-facing agent guide
+- `llms.txt` — compact repo index for LLMs
+- `A2A-CARD.md` — capability card for other agents
+- `docs/README.md` — documentation map
+
 ## Notes
 
 - The site is styled like GitHub.

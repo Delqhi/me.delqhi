@@ -1,0 +1,8 @@
+openapi: 3.1.0
+info:
+  title: me.delqhi.com public surface
+  version: 1.0.0
+  description: >
+    This repository currently exposes no public HTTP API. The file exists as a
+    placeholder for future API or content endpoints.
+paths: {}

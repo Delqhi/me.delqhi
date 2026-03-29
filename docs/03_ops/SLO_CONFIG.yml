@@ -1,0 +1,10 @@
+service: me.delqhi.com
+version: 1
+objectives:
+  availability: 99.9
+  homepage_lcp_seconds_p95: 2.5
+  blog_article_render_seconds_p95: 2.5
+quality_gates:
+  lint_required: true
+  build_required: true
+  tests_required: true

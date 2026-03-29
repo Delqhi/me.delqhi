@@ -1,0 +1,21 @@
+# me.delqhi.com
+
+Personal Angular 21 portfolio and blog.
+
+## Read first
+- `README.md` — project summary and run commands
+- `AGENTS.md` — agent-facing usage notes
+- `docs/README.md` — docs index
+
+## Core code
+- `src/app/app.ts` — app shell and navigation
+- `src/app/blog.service.ts` — blog post data
+- `src/app/blog-post/blog-post.component.ts` — article detail view
+- `src/app/projects/projects.component.ts` — repositories view
+- `src/app/readme/readme.component.ts` — README page
+
+## Commands
+- `npm run lint`
+- `npm run build`
+- `npm test -- --watch=false`
+- `npm run dev`

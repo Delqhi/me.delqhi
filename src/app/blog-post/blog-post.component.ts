@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 import { I18nService } from '../i18n.service';
 import { BlogService, BlogPost } from '../blog.service';
 
@@ -25,6 +26,29 @@ import { BlogService, BlogPost } from '../blog.service';
 
         <!-- Content -->
         <div class="prose prose-invert max-w-none text-gh-text leading-relaxed" [innerHTML]="post()!.content"></div>
+
+        @if (post()!.youtubeEmbedUrl) {
+          <section class="border border-gh-border rounded-lg overflow-hidden bg-gh-bg-secondary">
+            <div class="flex items-center justify-between gap-4 px-4 py-3 border-b border-gh-border">
+              <div>
+                <h2 class="text-sm font-semibold text-gh-text">YouTube video</h2>
+                <p class="text-xs text-gh-text-secondary">Watch the companion walkthrough for this post.</p>
+              </div>
+              <a [href]="post()!.youtubeEmbedUrl" target="_blank" rel="noopener noreferrer" class="text-xs text-gh-link hover:underline">Open on YouTube</a>
+            </div>
+            <div class="aspect-video bg-black">
+              <iframe
+                class="h-full w-full"
+                [src]="trustYouTubeUrl(post()!.youtubeEmbedUrl!)"
+                title="YouTube video"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </section>
+        }
 
         <!-- Footer -->
         <div class="mt-12 pt-8 border-t border-gh-border flex flex-col gap-12">
@@ -103,6 +127,7 @@ export class BlogPostComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private blogService = inject(BlogService);
   private i18n = inject(I18nService);
+  private sanitizer = inject(DomSanitizer);
   
   t = this.i18n.t;
   post = signal<BlogPost | null>(null);
@@ -121,7 +146,15 @@ export class BlogPostComponent implements OnInit {
   }
 
   scrollToTop(smooth = true) {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
     window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
+  }
+
+  trustYouTubeUrl(url: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   subscribe(event: Event) {

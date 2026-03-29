@@ -139,6 +139,10 @@ export class BlogComponent {
   isSubscribed = signal(false);
 
   scrollToTop(smooth = true) {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
     window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
   }
 

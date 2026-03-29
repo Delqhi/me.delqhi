@@ -30,19 +30,7 @@ import { GoogleGenAI } from '@google/genai';
         <div class="text-base text-gh-text mb-4">
           <p>Software Engineer & Tech Enthusiast. Building enterprise-grade applications and sharing knowledge.</p>
         </div>
-        
-        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gh-text mb-6">
-          <div class="flex items-center gap-2">
-            <mat-icon class="text-gh-text-secondary text-[16px] w-[16px] h-[16px]">email</mat-icon>
-            <a href="mailto:contact@jeremyschulze.com" class="hover:text-gh-link hover:underline">contact&#64;jeremyschulze.com</a>
-          </div>
-          <div class="flex items-center gap-2">
-            <mat-icon class="text-gh-text-secondary text-[16px] w-[16px] h-[16px]">link</mat-icon>
-            <a href="https://jeremyschulze.com" target="_blank" class="hover:text-gh-link hover:underline">jeremyschulze.com</a>
-          </div>
-        </div>
-
-        <div class="border-t border-gh-border pt-4 mt-2">
+                <div class="border-t border-gh-border pt-4 mt-2">
           <h3 class="text-sm font-semibold text-gh-text mb-2">{{ t()('sidebar.organizations') }}</h3>
           <div class="flex flex-wrap gap-2">
             <a href="#" class="w-8 h-8 rounded-md border border-gh-border overflow-hidden hover:border-gray-500 transition-colors" title="Google Developer Partner">

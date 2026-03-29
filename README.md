@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# me.delqhi.com
 
-# Run and deploy your AI Studio app
+Personal portfolio and blog for Jeremy Schulze.
 
-This contains everything you need to run your app locally.
+## What this is
 
-View your app in AI Studio: https://ai.studio/apps/69681277-9a6b-455f-b12b-22c62ed8f883
+- GitHub-like personal website
+- Blog index and article pages
+- Open Source / projects overview
+- README-style profile page
 
-## Run Locally
+## Routes
 
-**Prerequisites:**  Node.js
+- `/` — overview
+- `/projects` — open source repositories
+- `/blog` — article list
+- `/blog/:id` — article detail
+- `/readme` — in-app README view
 
+## Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Angular 21
+- TypeScript
+- Angular Material
+- Signals and standalone components
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Useful scripts
+
+```bash
+npm run lint
+npm run build
+npm test
+```
+
+## Notes
+
+- The site is styled like GitHub.
+- The navigation highlights Open Source, Blog, and README content.
+- Content is intentionally personal and portfolio-focused.

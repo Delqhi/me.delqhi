@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterLink } from '@angular/router';
 import { I18nService } from '../i18n.service';
 
 @Component({
   selector: 'app-projects',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [MatIconModule],
+  imports: [MatIconModule, RouterLink],
   template: `
     <div class="flex flex-col gap-4">
       <!-- Search and Filter -->
@@ -74,12 +75,43 @@ import { I18nService } from '../i18n.service';
           </div>
         }
       </div>
+
+      <div class="mt-12 pt-8 border-t border-gh-border flex flex-col gap-12 animate-in fade-in duration-500">
+        <div>
+          <div class="flex flex-wrap gap-2">
+            @for (tag of repositoryTags; track tag) {
+              <span class="bg-gh-bg-secondary border border-gh-border text-gh-text-secondary px-3 py-1 rounded-full text-sm hover:text-gh-link hover:border-gh-link cursor-pointer transition-colors">{{ tag }}</span>
+            }
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between pt-4">
+          <div class="flex-1">
+            <a routerLink="/blog" class="group inline-flex items-center gap-2 text-sm text-gh-text-secondary hover:text-gh-link transition-colors">
+              <mat-icon class="text-[16px] w-[16px] h-[16px] group-hover:-translate-x-1 transition-transform">arrow_back</mat-icon>
+              <span class="font-medium">{{ t()('overview.allPosts') }}</span>
+            </a>
+          </div>
+          <button (click)="scrollToTop()" class="flex items-center gap-1 text-sm text-gh-text-secondary hover:text-gh-text transition-colors">
+            <mat-icon class="text-[16px] w-[16px] h-[16px]">arrow_upward</mat-icon>
+            {{ t()('blog.scrollTop') }}
+          </button>
+          <div class="flex-1 flex justify-end">
+            <a routerLink="/readme" class="group inline-flex items-center gap-2 text-sm text-gh-text-secondary hover:text-gh-link transition-colors">
+              <span class="font-medium">{{ t()('nav.readme') }}</span>
+              <mat-icon class="text-[16px] w-[16px] h-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</mat-icon>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   `
 })
 export class ProjectsComponent {
   private i18n = inject(I18nService);
   t = this.i18n.t;
+
+  repositoryTags = ['Angular', 'Cloudflare', 'CSS', 'JavaScript', 'Node.js', 'Tailwind', 'TypeScript'];
 
   repositories = [
     {
@@ -138,4 +170,12 @@ export class ProjectsComponent {
       activity: [50, 40, 30, 20, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 90]
     }
   ];
+
+  scrollToTop(smooth = true) {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
+  }
 }

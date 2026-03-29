@@ -9,26 +9,26 @@ import { I18nService, Language } from './i18n.service';
   selector: 'app-root',
   imports: [RouterOutlet, RouterLink, RouterLinkActive, MatIconModule],
   template: `
-    <div class="min-h-screen flex flex-col" (click)="closeMenus($event)">
+    <div class="min-h-screen flex flex-col" tabindex="0" (click)="closeMenus($event)" (keydown.escape)="closeMenus($event)">
       
       <div class="pt-8 px-4 md:px-8 max-w-4xl mx-auto w-full flex-1 flex flex-col gap-8">
         <!-- Main Content -->
         <div class="w-full flex flex-col">
           <!-- Tabs -->
           <div class="border-b border-gh-border mb-4 sticky top-0 bg-gh-bg z-10 flex justify-between items-center">
-            <nav class="flex gap-4" aria-label="Tabs">
+<nav class="flex gap-4" aria-label="Tabs">
               <a routerLink="/" routerLinkActive="border-gh-link text-gh-text font-semibold" [routerLinkActiveOptions]="{exact: true}" class="px-2 py-3 border-b-2 border-transparent text-gh-text-secondary hover:bg-gh-bg-secondary rounded-t-md flex items-center gap-2 text-sm transition-colors">
                 <mat-icon class="text-[18px] w-[18px] h-[18px]">menu_book</mat-icon>
                 {{ t()('nav.overview') }}
-              </a>
-              <a routerLink="/blog" routerLinkActive="border-gh-link text-gh-text font-semibold" class="px-2 py-3 border-b-2 border-transparent text-gh-text-secondary hover:bg-gh-bg-secondary rounded-t-md flex items-center gap-2 text-sm transition-colors">
-                <mat-icon class="text-[18px] w-[18px] h-[18px]">article</mat-icon>
-                {{ t()('nav.blog') }}
               </a>
               <a routerLink="/projects" routerLinkActive="border-gh-link text-gh-text font-semibold" class="px-2 py-3 border-b-2 border-transparent text-gh-text-secondary hover:bg-gh-bg-secondary rounded-t-md flex items-center gap-2 text-sm transition-colors">
                 <mat-icon class="text-[18px] w-[18px] h-[18px]">folder_shared</mat-icon>
                 {{ t()('nav.repositories') }}
                 <span class="bg-gh-btn-bg text-gh-text px-2 py-0.5 rounded-full text-xs font-medium">12</span>
+              </a>
+              <a routerLink="/blog" routerLinkActive="border-gh-link text-gh-text font-semibold" class="px-2 py-3 border-b-2 border-transparent text-gh-text-secondary hover:bg-gh-bg-secondary rounded-t-md flex items-center gap-2 text-sm transition-colors">
+                <mat-icon class="text-[18px] w-[18px] h-[18px]">article</mat-icon>
+                {{ t()('nav.blog') }}
               </a>
               <a routerLink="/readme" routerLinkActive="border-gh-link text-gh-text font-semibold" class="px-2 py-3 border-b-2 border-transparent text-gh-text-secondary hover:bg-gh-bg-secondary rounded-t-md flex items-center gap-2 text-sm transition-colors">
                 <mat-icon class="text-[18px] w-[18px] h-[18px]">info</mat-icon>
@@ -119,7 +119,9 @@ export class App {
       } else if (storedTheme === 'dark') {
         this.isDarkMode.set(true);
       } else {
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const prefersDark = typeof window.matchMedia === 'function'
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false;
         this.isDarkMode.set(prefersDark);
       }
 

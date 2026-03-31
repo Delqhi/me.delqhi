@@ -72,11 +72,11 @@ import { GoogleGenAI } from '@google/genai';
               </div>
               <div class="px-4 py-2 border-b border-gh-border flex items-center gap-4 text-sm">
                 <span class="text-gh-text-secondary w-16">{{ t()('contact.from') }}</span>
-                <input type="email" required placeholder="your&#64;email.com" class="flex-1 bg-transparent border-none outline-none text-gh-text placeholder:text-gh-text-secondary/50 focus:ring-0 p-0">
+                <input type="email" required placeholder="your&#64;email.com" [value]="fromEmail()" (input)="updateFromEmail($event)" class="flex-1 bg-transparent border-none outline-none text-gh-text placeholder:text-gh-text-secondary/50 focus:ring-0 p-0">
               </div>
               <div class="px-4 py-2 border-b border-gh-border flex items-center gap-4 text-sm">
                 <span class="text-gh-text-secondary w-16">{{ t()('contact.subject') }}</span>
-                <input type="text" required placeholder="What's this about?" class="flex-1 bg-transparent border-none outline-none text-gh-text placeholder:text-gh-text-secondary/50 focus:ring-0 p-0">
+                <input type="text" required placeholder="What's this about?" [value]="subject()" (input)="updateSubject($event)" class="flex-1 bg-transparent border-none outline-none text-gh-text placeholder:text-gh-text-secondary/50 focus:ring-0 p-0">
               </div>
               <div class="p-4 relative">
                 <textarea required rows="6" [value]="messageText()" (input)="updateMessage($event)" [placeholder]="t()('contact.messagePlaceholder')" class="w-full bg-transparent border-none outline-none text-gh-text placeholder:text-gh-text-secondary/50 focus:ring-0 p-0 resize-none text-sm"></textarea>
@@ -114,11 +114,15 @@ export class ProfileSidebarComponent {
   isSent = signal(false);
   messageText = signal('');
   isEnhancing = signal(false);
+  fromEmail = signal('');
+  subject = signal('');
 
   openContactModal() {
     this.isContactModalOpen.set(true);
     this.isSent.set(false);
     this.messageText.set('');
+    this.fromEmail.set('');
+    this.subject.set('');
   }
 
   closeContactModal() {
@@ -128,6 +132,16 @@ export class ProfileSidebarComponent {
   updateMessage(event: Event) {
     const target = event.target as HTMLTextAreaElement;
     this.messageText.set(target.value);
+  }
+
+  updateFromEmail(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.fromEmail.set(target.value);
+  }
+
+  updateSubject(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.subject.set(target.value);
   }
 
   async enhanceTextWithAI() {
@@ -154,6 +168,10 @@ export class ProfileSidebarComponent {
 
   sendMessage(event: Event) {
     event.preventDefault();
+    const mailtoUrl = `mailto:contact@jeremyschulze.com?subject=${encodeURIComponent(this.subject())}&body=${encodeURIComponent(`From: ${this.fromEmail()}\n\n${this.messageText()}`)}`;
+    if (typeof window !== 'undefined') {
+      window.location.href = mailtoUrl;
+    }
     this.isSent.set(true);
     setTimeout(() => {
       this.closeContactModal();

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
 import { I18nService } from '../i18n.service';
@@ -12,7 +12,7 @@ import { I18nService } from '../i18n.service';
       <!-- Search and Filter -->
       <div class="flex flex-col md:flex-row gap-4 border-b border-gh-border pb-4">
         <div class="flex-1">
-          <input type="text" [placeholder]="t()('projects.find')" class="w-full bg-gh-bg border border-gh-border rounded-md px-3 py-1.5 text-sm focus:outline-none focus:border-gh-link focus:ring-1 focus:ring-gh-link text-gh-text placeholder-gh-text-secondary transition-all">
+          <input (input)="searchQuery.set($any($event.target).value)" type="text" [placeholder]="t()('projects.find')" class="w-full bg-gh-bg border border-gh-border rounded-md px-3 py-1.5 text-sm focus:outline-none focus:border-gh-link focus:ring-1 focus:ring-gh-link text-gh-text placeholder-gh-text-secondary transition-all">
         </div>
         <div class="flex gap-2">
           <button class="bg-gh-btn-bg border border-gh-border text-gh-text font-medium py-1.5 px-4 rounded-md hover:bg-gh-btn-hover transition-colors text-sm flex items-center gap-2">
@@ -21,7 +21,7 @@ import { I18nService } from '../i18n.service';
           <button class="bg-gh-btn-bg border border-gh-border text-gh-text font-medium py-1.5 px-4 rounded-md hover:bg-gh-btn-hover transition-colors text-sm flex items-center gap-2">
             {{ t()('projects.language') }} <mat-icon class="text-[16px] w-[16px] h-[16px]">arrow_drop_down</mat-icon>
           </button>
-          <button class="bg-gh-btn-bg border border-gh-border text-gh-text font-medium py-1.5 px-4 rounded-md hover:bg-gh-btn-hover transition-colors text-sm flex items-center gap-2">
+          <button (click)="cycleSort()" class="bg-gh-btn-bg border border-gh-border text-gh-text font-medium py-1.5 px-4 rounded-md hover:bg-gh-btn-hover transition-colors text-sm flex items-center gap-2">
             {{ t()('projects.sort') }} <mat-icon class="text-[16px] w-[16px] h-[16px]">arrow_drop_down</mat-icon>
           </button>
           <button class="bg-gh-green text-white font-medium py-1.5 px-4 rounded-md hover:bg-gh-green-hover transition-colors text-sm flex items-center gap-2 ml-2">
@@ -32,7 +32,7 @@ import { I18nService } from '../i18n.service';
 
       <!-- Repository List -->
       <div class="flex flex-col">
-        @for (repo of repositories; track repo.name) {
+        @for (repo of filteredRepos(); track repo.name) {
           <div class="py-6 border-b border-gh-border flex justify-between items-start">
             <div class="flex flex-col gap-2">
               <div class="flex items-center gap-2">
@@ -110,6 +110,40 @@ import { I18nService } from '../i18n.service';
 export class ProjectsComponent {
   private i18n = inject(I18nService);
   t = this.i18n.t;
+
+  searchQuery = signal('');
+  sortBy = signal<'star' | 'new' | 'updated'>('star');
+
+  filteredRepos = computed(() => {
+    const query = this.searchQuery().toLowerCase();
+    let repos = this.repositories;
+
+    if (query) {
+      repos = repos.filter(
+        (repo) =>
+          repo.name.toLowerCase().includes(query) ||
+          repo.description?.toLowerCase().includes(query),
+      );
+    }
+
+    const sort = this.sortBy();
+    if (sort === 'star') {
+      repos = [...repos].sort((a, b) => b.stars - a.stars);
+    }
+
+    return repos;
+  });
+
+  cycleSort() {
+    const current = this.sortBy();
+    if (current === 'star') {
+      this.sortBy.set('new');
+    } else if (current === 'new') {
+      this.sortBy.set('updated');
+    } else {
+      this.sortBy.set('star');
+    }
+  }
 
   repositoryTags = ['Angular', 'Cloudflare', 'CSS', 'JavaScript', 'Node.js', 'Tailwind', 'TypeScript'];
 

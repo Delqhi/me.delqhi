@@ -39,6 +39,9 @@ import { GoogleGenAI } from '@google/genai';
             <a href="#" class="w-8 h-8 rounded-md border border-gh-border overflow-hidden hover:border-gray-500 transition-colors" title="NVIDIA Partner Developer Program">
               <img src="https://avatars.githubusercontent.com/NVIDIA?s=64&v=4" alt="NVIDIA Partner Developer Program" class="w-full h-full object-cover" referrerpolicy="no-referrer">
             </a>
+            <a href="https://github.com/OpenSIN-AI" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-md border border-gh-border overflow-hidden hover:border-gray-500 transition-colors" title="OpenSIN AI">
+              <img src="https://avatars.githubusercontent.com/u/269799971?s=64&v=4" alt="OpenSIN AI" class="w-full h-full object-cover" referrerpolicy="no-referrer">
+            </a>
           </div>
         </div>
       </div>

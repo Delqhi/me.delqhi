@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, signal, effect, inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser, DOCUMENT } from '@angular/common';
+import { ChangeDetectionStrategy, Component, signal, inject, PLATFORM_ID, DOCUMENT } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { I18nService, Language } from './i18n.service';
@@ -16,15 +16,10 @@ import { I18nService, Language } from './i18n.service';
         <div class="w-full flex flex-col">
           <!-- Tabs -->
           <div class="border-b border-gh-border mb-4 sticky top-0 bg-gh-bg z-10 flex justify-between items-center">
-<nav class="flex gap-4" aria-label="Tabs">
+            <nav class="flex gap-4" aria-label="Tabs">
               <a routerLink="/" routerLinkActive="border-gh-link text-gh-text font-semibold" [routerLinkActiveOptions]="{exact: true}" class="px-2 py-3 border-b-2 border-transparent text-gh-text-secondary hover:bg-gh-bg-secondary rounded-t-md flex items-center gap-2 text-sm transition-colors">
                 <mat-icon class="text-[18px] w-[18px] h-[18px]">menu_book</mat-icon>
                 {{ t()('nav.overview') }}
-              </a>
-              <a routerLink="/projects" routerLinkActive="border-gh-link text-gh-text font-semibold" class="px-2 py-3 border-b-2 border-transparent text-gh-text-secondary hover:bg-gh-bg-secondary rounded-t-md flex items-center gap-2 text-sm transition-colors">
-                <mat-icon class="text-[18px] w-[18px] h-[18px]">folder_shared</mat-icon>
-                {{ t()('nav.repositories') }}
-                <span class="bg-gh-btn-bg text-gh-text px-2 py-0.5 rounded-full text-xs font-medium">12</span>
               </a>
               <a routerLink="/blog" routerLinkActive="border-gh-link text-gh-text font-semibold" class="px-2 py-3 border-b-2 border-transparent text-gh-text-secondary hover:bg-gh-bg-secondary rounded-t-md flex items-center gap-2 text-sm transition-colors">
                 <mat-icon class="text-[18px] w-[18px] h-[18px]">article</mat-icon>
@@ -119,27 +114,29 @@ export class App {
       } else if (storedTheme === 'dark') {
         this.isDarkMode.set(true);
       } else {
-        const prefersDark = typeof window.matchMedia === 'function'
-          ? window.matchMedia('(prefers-color-scheme: dark)').matches
-          : false;
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         this.isDarkMode.set(prefersDark);
       }
+      this.applyTheme(this.isDarkMode());
+    }
+  }
 
-      effect(() => {
-        const isDark = this.isDarkMode();
-        if (isDark) {
-          this.document.documentElement.classList.add('dark');
-          localStorage.setItem('theme', 'dark');
-        } else {
-          this.document.documentElement.classList.remove('dark');
-          localStorage.setItem('theme', 'light');
-        }
-      });
+  private applyTheme(isDark: boolean): void {
+    if (isPlatformBrowser(this.platformId)) {
+      if (isDark) {
+        this.document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        this.document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
     }
   }
 
   toggleTheme() {
-    this.isDarkMode.update(dark => !dark);
+    const next = !this.isDarkMode();
+    this.isDarkMode.set(next);
+    this.applyTheme(next);
   }
 
   toggleLanguageMenu(event: Event) {

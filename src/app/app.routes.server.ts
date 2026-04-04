@@ -10,6 +10,10 @@ export const serverRoutes: ServerRoute[] = [
     }
   },
   {
+    path: 'readme',
+    renderMode: RenderMode.Server,
+  },
+  {
     path: '**',
     renderMode: RenderMode.Prerender,
   },

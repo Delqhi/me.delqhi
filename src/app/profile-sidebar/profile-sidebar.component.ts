@@ -10,17 +10,17 @@ import { GoogleGenAI } from '@google/genai';
   template: `
     <div class="flex flex-col md:flex-row gap-8 items-start">
       <div class="relative group shrink-0">
-        <img src="https://avatars.githubusercontent.com/u/9919?s=400&v=4" alt="Jeremy Schulze" class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border border-gh-border shadow-md z-20 relative">
-        <div class="absolute bottom-6 right-2 z-30 bg-gh-bg border border-gh-border rounded-full p-2 flex items-center justify-center cursor-pointer hover:text-gh-link text-gh-text-secondary shadow-sm">
-          <mat-icon>sentiment_satisfied</mat-icon>
-        </div>
+        <img src="/jerry-profil-picture.PNG" alt="Jeremy Schulze" class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border border-gh-border shadow-md z-20 relative">
+        <a href="https://opensin.ai" target="_blank" rel="noopener noreferrer" class="absolute bottom-6 right-2 z-30 bg-gh-bg border border-gh-border rounded-full p-1.5 flex items-center justify-center cursor-pointer hover:border-gh-link text-gh-text-secondary shadow-sm transition-colors">
+          <img src="/LOGO-OpenSIN-8K-transparent.png" alt="OpenSIN" class="w-5 h-5 object-contain">
+        </a>
       </div>
       
       <div class="flex flex-col flex-1 w-full">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
           <div>
             <h1 class="text-3xl font-bold text-gh-text leading-tight">Jeremy Schulze</h1>
-            <h2 class="text-xl font-light text-gh-text-secondary leading-tight">jeremyschulze</h2>
+            <h2 class="text-xl font-light text-gh-text-secondary leading-tight">@Delqhi</h2>
           </div>
           <button (click)="openContactModal()" class="bg-gh-btn-bg border border-gh-border text-gh-text font-medium py-1.5 px-4 rounded-md hover:bg-gh-btn-hover hover:border-gray-500 transition-colors text-sm whitespace-nowrap">
             {{ t()('sidebar.contactMe') }}

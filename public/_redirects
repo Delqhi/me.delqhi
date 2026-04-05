@@ -1,0 +1,7 @@
+# Cloudflare Pages Redirects
+
+# www → non-www
+https://www.:splat :splat 301
+
+# Force HTTPS
+http://:splat https://:splat 301

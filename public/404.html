@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 — Seite nicht gefunden | OpenSIN</title>
+  <meta name="description" content="Die gesuchte Seite existiert nicht. Zurück zur Startseite oder zum Blog." />
+  <meta name="robots" content="noindex, follow" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 600px;
+      text-align: center;
+    }
+    .error-code {
+      font-size: 8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #10b981, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+    }
+    .error-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #f0f6fc;
+      margin: 1rem 0 0.5rem;
+    }
+    .error-desc {
+      color: #8b949e;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+    }
+    .link-primary {
+      background: linear-gradient(135deg, #10b981, #34d399);
+      color: #0d1117;
+    }
+    .link-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+    }
+    .link-secondary {
+      background: #161b22;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+    }
+    .link-secondary:hover {
+      border-color: #10b981;
+      color: #f0f6fc;
+    }
+    .agent-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      max-width: 200px;
+      margin: 2rem auto;
+    }
+    .agent-cell {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 8px;
+      border: 1px solid rgba(16, 185, 129, 0.15);
+      background: rgba(16, 185, 129, 0.04);
+      animation: pulse 3s ease-in-out infinite;
+    }
+    .agent-cell:nth-child(1) { animation-delay: 0s; }
+    .agent-cell:nth-child(2) { animation-delay: 0.3s; }
+    .agent-cell:nth-child(3) { animation-delay: 0.6s; }
+    .agent-cell:nth-child(4) { animation-delay: 0.9s; }
+    .agent-cell:nth-child(5) { animation-delay: 1.2s; }
+    .agent-cell:nth-child(6) { animation-delay: 1.5s; }
+    @keyframes pulse {
+      0%, 100% { background: rgba(16, 185, 129, 0.04); }
+      50% { background: rgba(16, 185, 129, 0.15); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="error-code">404</div>
+    <div class="error-title">Seite nicht gefunden</div>
+    <p class="error-desc">
+      Diese Seite existiert nicht (mehr). Vielleicht wurde sie verschoben oder gelöscht.
+      Unsere 100+ AI-Agenten konnten sie leider nicht finden.
+    </p>
+    <div class="agent-grid">
+      <div class="agent-cell"></div>
+      <div class="agent-cell"></div>
+      <div class="agent-cell"></div>
+      <div class="agent-cell"></div>
+      <div class="agent-cell"></div>
+      <div class="agent-cell"></div>
+    </div>
+    <div class="links">
+      <a href="/" class="link link-primary">← Zurück zur Startseite</a>
+      <a href="/blog" class="link link-secondary">Zum Blog →</a>
+    </div>
+  </div>
+</body>
+</html>

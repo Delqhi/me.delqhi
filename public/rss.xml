@@ -1,36 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-<channel>
-<title>Jeremy Schulze</title>
-<description>Senior AI &amp; Software Engineer focused on building enterprise-grade, scalable AI systems and high-performance web applications.</description>
-<link>https://jeremyschulze.delqhi.com/</link>
-<item>
-<title>Building Enterprise Angular Apps in 2026</title>
-<link>https://jeremyschulze.delqhi.com/blog/building-enterprise-angular-apps</link>
-<guid isPermaLink="true">https://jeremyschulze.delqhi.com/blog/building-enterprise-angular-apps</guid>
-<description>The landscape of Angular development has evolved significantly. In this article, we explore the best practices for building scalable, maintainable enterprise applications using the latest features in Angular 21, including zoneless change detection and signals.</description>
-<pubDate>Mon, 23 Mar 2026 12:00:00 GMT</pubDate>
-</item>
-<item>
-<title>The Minimalist Developer Portfolio</title>
-<link>https://jeremyschulze.delqhi.com/blog/minimalist-developer-portfolio</link>
-<guid isPermaLink="true">https://jeremyschulze.delqhi.com/blog/minimalist-developer-portfolio</guid>
-<description>Inspired by Peter Steinberger and the Minimax enterprise UI, I decided to rebuild my personal website. Here is why a GitHub-like interface might be the ultimate developer portfolio design—combining familiarity, utility, and a clean aesthetic.</description>
-<pubDate>Sun, 15 Mar 2026 12:00:00 GMT</pubDate>
-</item>
-<item>
-<title>Deploying to Cloudflare Pages for Free</title>
-<link>https://jeremyschulze.delqhi.com/blog/deploying-cloudflare-pages</link>
-<guid isPermaLink="true">https://jeremyschulze.delqhi.com/blog/deploying-cloudflare-pages</guid>
-<description>A step-by-step guide on how to host your personal blog and portfolio on Cloudflare Pages for absolutely free, including setting up custom domains and automated deployments from your Git repository.</description>
-<pubDate>Sat, 28 Feb 2026 12:00:00 GMT</pubDate>
-</item>
-<item>
-<title>Why I Prefer Tailwind CSS for Component Libraries</title>
-<link>https://jeremyschulze.delqhi.com/blog/tailwind-css-component-libraries</link>
-<guid isPermaLink="true">https://jeremyschulze.delqhi.com/blog/tailwind-css-component-libraries</guid>
-<description>Tailwind CSS has become the industry standard for styling web applications. In this post, I discuss why utility-first CSS is superior for building reusable component libraries and maintaining design consistency across large teams.</description>
-<pubDate>Mon, 12 Jan 2026 12:00:00 GMT</pubDate>
-</item>
-</channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OpenSIN Blog — AI Agent Orchestration</title>
+    <description>OpenSIN: 100+ autonomous AI agents. 18 specialized teams. The first Agent-to-Agent network where specialists communicate, coordinate, and execute without human intervention.</description>
+    <link>https://me.delqhi.com/blog</link>
+    <language>de-de</language>
+    <lastBuildDate>Sat, 04 Apr 2026 15:27:58 GMT</lastBuildDate>
+    <atom:link href="https://me.delqhi.com/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://me.delqhi.com/LOGO-OpenSIN-8K-transparent.png</url>
+      <title>OpenSIN Blog</title>
+      <link>https://me.delqhi.com/blog</link>
+    </image>
+    <item>
+      <title>Warum einzelne AI-Agenten obsolet sind</title>
+      <link>https://me.delqhi.com/blog/01-warum-andere-agenten-obsolet-sind</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/01-warum-andere-agenten-obsolet-sind</guid>
+      <description>Einzelne Agenten sind Vergangenheit. OpenSIN setzt auf 100+ autonome Spezialisten im A2A-Netzwerk.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>$2.400 in 48h mit OpenSIN auf Upwork</title>
+      <link>https://me.delqhi.com/blog/02-upwork-2400-in-48h</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/02-upwork-2400-in-48h</guid>
+      <description>Wie wir mit OpenSIN-Agenten in 48 Stunden $2.400 auf Upwork verdient haben. Ein Case Study.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>A2A Protokoll: Wie Agenten wirklich kommunizieren</title>
+      <link>https://me.delqhi.com/blog/03-a2a-protokoll</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/03-a2a-protokoll</guid>
+      <description>Das A2A-Protokoll ermöglicht echte Kommunikation zwischen AI-Agenten. Keine Silos mehr.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Massen-Authentifizierung für AI-Plattformen</title>
+      <link>https://me.delqhi.com/blog/04-mass-platform-auth</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/04-mass-platform-auth</guid>
+      <description>Sichere Authentifizierung für hunderte AI-Agenten. Wie OpenSIN Mass-Auth löst.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Warum OpenSIN klassische AI-Assistenten ersetzt</title>
+      <link>https://me.delqhi.com/blog/05-opensin-destroy-assistants</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/05-opensin-destroy-assistants</guid>
+      <description>Klassische Assistenten sind statisch. OpenSIN-Agenten sind autonom und vernetzt.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Messaging-Plattformen mit AI-Agenten verbinden</title>
+      <link>https://me.delqhi.com/blog/06-messaging-platforms</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/06-messaging-platforms</guid>
+      <description>Verbinde WhatsApp, Telegram, Discord mit OpenSIN. Zentrale Steuerung für alle Kanäle.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>OpenSIN Chrome Extension: AI im Browser</title>
+      <link>https://me.delqhi.com/blog/07-chrome-extension</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/07-chrome-extension</guid>
+      <description>Die OpenSIN Chrome Extension bringt AI-Agenten in den Browser. Automatisiere Workflows.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Was OpenClaw nicht kann (und OpenSIN schon)</title>
+      <link>https://me.delqhi.com/blog/08-what-openclaw-cant</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/08-what-openclaw-cant</guid>
+      <description>OpenClaw hat Grenzen. OpenSIN bietet mehr Kanäle, bessere Architektur, echte Autonomie.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Was Manus nicht kann (und OpenSIN schon)</title>
+      <link>https://me.delqhi.com/blog/09-what-manus-cant</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/09-what-manus-cant</guid>
+      <description>Manus ist gut, aber OpenSIN bietet offene Architektur und volle Kontrolle.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Jede App steuerbar: Die OpenSIN-Schnittstelle</title>
+      <link>https://me.delqhi.com/blog/10-keine-app-die-opensin-nicht-steuern-kann</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/10-keine-app-die-opensin-nicht-steuern-kann</guid>
+      <description>Es gibt keine App, die OpenSIN nicht integrieren kann. Von Legacy bis Modern API.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Paperclip vs OpenSIN: Sicherheit im Fokus</title>
+      <link>https://me.delqhi.com/blog/11-paperclip-vs-opensin</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/11-paperclip-vs-opensin</guid>
+      <description>Der Paperclip-Maximizer zeigt die Gefahren unkontrollierter AI. OpenSIN setzt auf Guardrails.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Qwen 3.6 Free: Das beste kostenlose Modell?</title>
+      <link>https://me.delqhi.com/blog/12-qwen-3-6-free</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/12-qwen-3-6-free</guid>
+      <description>Wir testen Qwen 3.6 Free im OpenSIN-Stack. Leistung, Kosten und Einsatzgebiete.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Claude Opus 4.6 Free: Lohnt sich der Wechsel?</title>
+      <link>https://me.delqhi.com/blog/13-claude-opus-4-6-free</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/13-claude-opus-4-6-free</guid>
+      <description>Claude Opus 4.6 Free im Test. Wie schlägt es sich im Vergleich zu anderen Modellen?</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Gemini 3.1 Pro Free: Googles Power-Modell</title>
+      <link>https://me.delqhi.com/blog/14-gemini-3-1-pro-free</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/14-gemini-3-1-pro-free</guid>
+      <description>Gemini 3.1 Pro Free im OpenSIN-Einsatz. Massive Leistung ohne Kosten.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>OpenSIN steuert macOS: Volle Kontrolle</title>
+      <link>https://me.delqhi.com/blog/15-opensin-steuert-macos</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/15-opensin-steuert-macos</guid>
+      <description>OpenSIN-Agenten steuern macOS nativ. Von Mausbewegungen bis Terminal-Befehlen.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>GPT-5.4 Free: OpenAI</title>
+      <link>https://me.delqhi.com/blog/16-gpt-5-4-free</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/16-gpt-5-4-free</guid>
+      <description>GPT-5.4 Free ist da. Wir testen die Limits und zeigen, wie du es in OpenSIN nutzt.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>KAIROS VS Code Sidebar: Coding neu gedacht</title>
+      <link>https://me.delqhi.com/blog/17-kairos-vscode-sidebar</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/17-kairos-vscode-sidebar</guid>
+      <description>Die KAIROS Sidebar bringt OpenSIN-Agenten direkt in VS Code. Coding war nie schneller.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Notion und OpenSIN: Perfekte Integration</title>
+      <link>https://me.delqhi.com/blog/17-notion-und-opensin</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/17-notion-und-opensin</guid>
+      <description>Verbinde Notion mit OpenSIN-Agenten. Automatisiere Docs, Tasks und Datenbanken.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Apple Notes und OpenSIN: Notizen automatisieren</title>
+      <link>https://me.delqhi.com/blog/18-apple-notes-und-opensin</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/18-apple-notes-und-opensin</guid>
+      <description>OpenSIN liest und schreibt Apple Notes. Deine Notizen werden zum aktiven Wissensspeicher.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+    <item>
+      <title>Linear und OpenSIN: Tasks automatisch lösen</title>
+      <link>https://me.delqhi.com/blog/19-linear-und-opensin</link>
+      <guid isPermaLink="true">https://me.delqhi.com/blog/19-linear-und-opensin</guid>
+      <description>OpenSIN-Agenten bearbeiten Linear-Tasks autonom. Von Bug-Reports bis Feature-Requests.</description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+      <author>OpenSIN Team</author>
+      <category>Vergleich</category>
+      <category>[</category>
+    </item>
+  </channel>
 </rss>

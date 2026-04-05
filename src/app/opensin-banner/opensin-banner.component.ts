@@ -7,16 +7,33 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <a [href]="bannerHref()" target="_blank" rel="noopener noreferrer" class="block group opensin-banner">
-      <div class="banner-inner">
+      <div class="banner-inner" [class.banner-featured]="featured()">
         <div class="banner-grid">
           <div class="banner-content">
-            <div class="banner-badge">
-              <span class="badge-dot"></span>
-              <span class="badge-text">{{ badgeText() }}</span>
+            <div class="banner-header">
+              <div class="banner-badge" [class.badge-featured]="featured()">
+                <span class="badge-dot" [class.badge-dot-featured]="featured()"></span>
+                <span class="badge-text">{{ badgeText() }}</span>
+              </div>
+              @if (featured()) {
+                <span class="banner-tag">Most Popular</span>
+              }
             </div>
             <h2 class="banner-title">{{ title() }}</h2>
             <p class="banner-subtitle">{{ subtitle() }}</p>
             <p class="banner-desc">{{ description() }}</p>
+            @if (features().length > 0) {
+              <div class="banner-features">
+                @for (feature of features(); track feature) {
+                  <div class="feature-item">
+                    <svg class="feature-check" viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+                      <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/>
+                    </svg>
+                    <span>{{ feature }}</span>
+                  </div>
+                }
+              </div>
+            }
             <div class="banner-cta">
               <span>{{ ctaText() }}</span>
               <svg class="cta-arrow" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
@@ -60,13 +77,36 @@ import { CommonModule } from '@angular/common';
       --banner-cell-border: rgba(16, 185, 129, 0.12);
       --banner-cell-hover: rgba(16, 185, 129, 0.25);
       --banner-top-line: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.4), transparent);
+      --banner-feature-text: var(--gh-text-secondary);
+      --banner-tag-bg: rgba(16, 185, 129, 0.1);
+      --banner-tag-text: #10b981;
       position: relative;
       overflow: hidden;
       border-radius: 12px;
       border: 1px solid var(--banner-border);
       background: var(--banner-bg);
       padding: 2.5rem;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .banner-featured {
+      --banner-bg: linear-gradient(180deg, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0.02) 100%);
+      --banner-border: rgba(16, 185, 129, 0.3);
+      --banner-border-hover: rgba(16, 185, 129, 0.5);
+      --banner-title: var(--gh-text);
+      --banner-subtitle: var(--gh-text);
+      --banner-desc: var(--gh-text-secondary);
+      --banner-badge-bg: rgba(16, 185, 129, 0.15);
+      --banner-badge-border: rgba(16, 185, 129, 0.4);
+      --banner-badge-text: #10b981;
+      --banner-cta: #10b981;
+      --banner-glow: rgba(16, 185, 129, 0.15);
+      --banner-cell-bg: rgba(16, 185, 129, 0.1);
+      --banner-cell-border: rgba(16, 185, 129, 0.25);
+      --banner-cell-hover: rgba(16, 185, 129, 0.4);
+      --banner-top-line: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.8), transparent);
+      --banner-feature-text: var(--gh-text);
+      --banner-tag-bg: rgba(16, 185, 129, 0.2);
+      --banner-tag-text: #10b981;
     }
     :root.dark .banner-inner {
       --banner-bg: linear-gradient(180deg, rgba(16, 185, 129, 0.04) 0%, rgba(9, 9, 11, 0.95) 100%);
@@ -84,10 +124,37 @@ import { CommonModule } from '@angular/common';
       --banner-cell-border: rgba(16, 185, 129, 0.12);
       --banner-cell-hover: rgba(16, 185, 129, 0.25);
       --banner-top-line: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.4), transparent);
+      --banner-feature-text: #a1a1aa;
+      --banner-tag-bg: rgba(16, 185, 129, 0.1);
+      --banner-tag-text: #10b981;
+    }
+    :root.dark .banner-featured {
+      --banner-bg: linear-gradient(180deg, rgba(16, 185, 129, 0.12) 0%, rgba(9, 9, 11, 0.98) 100%);
+      --banner-border: rgba(16, 185, 129, 0.35);
+      --banner-border-hover: rgba(16, 185, 129, 0.55);
+      --banner-title: #ffffff;
+      --banner-subtitle: #e4e4e7;
+      --banner-desc: #a1a1aa;
+      --banner-badge-bg: rgba(16, 185, 129, 0.15);
+      --banner-badge-border: rgba(16, 185, 129, 0.4);
+      --banner-badge-text: #34d399;
+      --banner-cta: #34d399;
+      --banner-glow: rgba(16, 185, 129, 0.2);
+      --banner-cell-bg: rgba(16, 185, 129, 0.12);
+      --banner-cell-border: rgba(16, 185, 129, 0.3);
+      --banner-cell-hover: rgba(16, 185, 129, 0.45);
+      --banner-top-line: linear-gradient(90deg, transparent, rgba(16, 185, 129, 1), transparent);
+      --banner-feature-text: #d4d4d8;
+      --banner-tag-bg: rgba(16, 185, 129, 0.2);
+      --banner-tag-text: #34d399;
     }
     .group:hover .banner-inner {
       border-color: var(--banner-border-hover);
       box-shadow: 0 0 40px var(--banner-glow);
+    }
+    .group:hover .banner-featured {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 40px var(--banner-glow), 0 0 60px rgba(16, 185, 129, 0.1);
     }
     .banner-inner::before {
       content: '';
@@ -97,6 +164,22 @@ import { CommonModule } from '@angular/common';
       right: 0;
       height: 1px;
       background: var(--banner-top-line);
+    }
+    .banner-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 1rem;
+    }
+    .banner-tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--banner-tag-text);
+      background: var(--banner-tag-bg);
+      padding: 3px 8px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
     .banner-grid {
       display: grid;
@@ -116,7 +199,6 @@ import { CommonModule } from '@angular/common';
       border-radius: 999px;
       border: 1px solid var(--banner-badge-border);
       background: var(--banner-badge-bg);
-      margin-bottom: 1rem;
     }
     .badge-dot {
       width: 6px;
@@ -124,6 +206,12 @@ import { CommonModule } from '@angular/common';
       border-radius: 50%;
       background: #10b981;
       animation: pulse 2s ease-in-out infinite;
+    }
+    .badge-dot-featured {
+      width: 8px;
+      height: 8px;
+      background: #34d399;
+      box-shadow: 0 0 8px rgba(52, 211, 153, 0.5);
     }
     @keyframes pulse {
       0%, 100% { opacity: 1; }
@@ -140,28 +228,51 @@ import { CommonModule } from '@angular/common';
       font-size: 1.75rem;
       font-weight: 700;
       color: var(--banner-title);
-      margin: 0 0 0.5rem;
+      margin: 0.75rem 0 0.5rem;
       letter-spacing: -0.02em;
     }
+    .banner-featured + .banner-title,
+    .banner-featured ~ .banner-title {
+      font-size: 2rem;
+    }
     .banner-subtitle {
-      font-size: 0.95rem;
+      font-size: 1rem;
+      font-weight: 500;
       color: var(--banner-subtitle);
       margin: 0 0 0.5rem;
       line-height: 1.5;
     }
     .banner-desc {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: var(--banner-desc);
-      margin: 0 0 1.25rem;
+      margin: 0 0 1rem;
       line-height: 1.6;
       max-width: 480px;
+    }
+    .banner-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-bottom: 1.25rem;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: var(--banner-feature-text);
+      font-weight: 500;
+    }
+    .feature-check {
+      color: #10b981;
+      flex-shrink: 0;
     }
     .banner-cta {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.85rem;
-      font-weight: 500;
+      font-size: 0.9rem;
+      font-weight: 600;
       color: var(--banner-cta);
       transition: gap 0.2s ease;
     }
@@ -229,4 +340,6 @@ export class OpensinBannerComponent {
   description = input('The first Agent-to-Agent network where specialists communicate, coordinate, and execute without human intervention.');
   ctaText = input('Explore OpenSIN');
   bannerHref = input('https://opensin.ai');
+  featured = input(false);
+  features = input<string[]>([]);
 }

@@ -1,51 +1,1117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://me.delqhi.com/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://me.delqhi.com/projects</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://me.delqhi.com/blog</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://me.delqhi.com/blog/1</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://me.delqhi.com/blog/2</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://me.delqhi.com/blog/3</loc>
-    <lastmod>2026-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://me.delqhi.com/blog/4</loc>
-    <lastmod>2026-01-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://me.delqhi.com/readme</loc>
-    <lastmod>2026-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/projects</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/01-warum-andere-agenten-obsolet-sind</loc>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Warum einzelne AI-Agenten obsolet sind</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/02-upwork-2400-in-48h</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>$2.400 in 48h mit OpenSIN auf Upwork</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/03-a2a-protokoll</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>A2A Protokoll: Wie Agenten wirklich kommunizieren</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/04-mass-platform-auth</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Massen-Authentifizierung für AI-Plattformen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/05-opensin-destroy-assistants</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Warum OpenSIN klassische AI-Assistenten ersetzt</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/06-messaging-platforms</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Messaging-Plattformen mit AI-Agenten verbinden</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/07-chrome-extension</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN Chrome Extension: AI im Browser</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/08-what-openclaw-cant</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Was OpenClaw nicht kann (und OpenSIN schon)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/09-what-manus-cant</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Was Manus nicht kann (und OpenSIN schon)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/10-keine-app-die-opensin-nicht-steuern-kann</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Jede App steuerbar: Die OpenSIN-Schnittstelle</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/11-paperclip-vs-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Paperclip vs OpenSIN: Sicherheit im Fokus</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/12-qwen-3-6-free</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Qwen 3.6 Free: Das beste kostenlose Modell?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/13-claude-opus-4-6-free</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Claude Opus 4.6 Free: Lohnt sich der Wechsel?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/14-gemini-3-1-pro-free</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Gemini 3.1 Pro Free: Googles Power-Modell</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/15-opensin-steuert-macos</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN steuert macOS: Volle Kontrolle</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/16-gpt-5-4-free</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>GPT-5.4 Free: OpenAI</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/17-kairos-vscode-sidebar</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>KAIROS VS Code Sidebar: Coding neu gedacht</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/17-notion-und-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Notion und OpenSIN: Perfekte Integration</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/18-apple-notes-und-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Apple Notes und OpenSIN: Notizen automatisieren</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/19-linear-und-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Linear und OpenSIN: Tasks automatisch lösen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/20-github-und-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>GitHub und OpenSIN: DevOps auf Autopilot</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/21-google-docs-und-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Google Docs und OpenSIN: Schreiben mit AI</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/22-slack-und-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Slack und OpenSIN: Team-Kommunikation smart</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/23-free-vm-google-colab-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Free VM auf Google Colab: OpenSIN hosten</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/23-google-sheets-und-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Google Sheets und OpenSIN: Daten automatisieren</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/24-hermes-vs-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Hermes vs OpenSIN: Der Agenten-Vergleich</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/24-opensin-vscode-extension-v010</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN VS Code Extension v0.1.0 — Dein Editor wird zum Agenten-Command-Center</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/25-gemini-3-flash-live-speech-to-speech</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Gemini 3 Flash Live: Speech-to-Speech Revolution</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/26-acp-vs-mcp</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>ACP vs MCP: Welches Protokoll gewinnt?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/27-100-agents-zero-humans</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>100 Agenten, 0 Menschen: Der autonome Betrieb</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/28-opensin-vs-cursor</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Cursor: Wer codingt besser?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/29-truth-about-ai-coding-agents</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Die Wahrheit über AI Coding Agents</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/30-tui-gui-aui</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>TUI, GUI, AUI: Die Zukunft der Interfaces</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/31-fleet-monitoring-deep-dive</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Fleet Monitoring Deep Dive: Alles im Blick</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/32-security-scanner</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN Security Scanner: Code sicher machen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/33-design-system</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN Design System: Konsistenz überall</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/34-discord-bot</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN Discord Bot: Community managen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/35-endgame</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Endgame: Die Vision von OpenSIN</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/36-gap-analysis-world-class</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Gap Analysis: OpenSIN vs Weltklasse</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/37-opensin-vs-competition</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Konkurrenz: Der große Vergleich</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/38-real-competition</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Echte Konkurrenz: Wer bedroht OpenSIN?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/39-the-real-battle</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>The Real Battle: OpenSIN</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/40-opensin-37-channels</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>37 Messenger in 10 Min: OpenSIN vs OpenClaw</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/40-opensin-vs-codex</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs OpenAI Codex — Warum Cloud-Sandboxes nicht reichen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/40-opensin-vs-devin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. Devin AI — Warum ein einzelner Agent keine Revolution ist</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/41-opensin-vs-jules</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Google Jules — Warum 15 Tasks/Tag nicht reichen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/41-opensin-vs-replit</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. Replit Agent — Warum ein Browser-Editor keine Plattform ist</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/41-sin-chatroom-vs-openclaw</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>37 Messenger in 10 Min: OpenSIN vs OpenClaw</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/42-opensin-vs-augment</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Augment Code — Warum 400K Files nicht das Ende sind</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/42-opensin-vs-lovable</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. Lovable — Warum No-Code ohne Agenten nicht skaliert</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/43-opensin-vs-bolt</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. Bolt.new — Warum ein Prompt keine Architektur ist</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/43-opensin-vs-kilo</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Kilo Code — Warum 1.5M User nicht alles sind</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/44-opensin-vs-claude-code</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. Claude Code — Warum ein CLI-Agent keine Flotte ist</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/44-opensin-vs-morph</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Morph — Warum Infrastruktur allein nicht reicht</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/45-opensin-vs-copilot</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. GitHub Copilot — Warum Autocomplete keine Autonomie ist</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/45-opensin-vs-devin-2</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Devin 2.0 — Warum 67% PR-Merge-Rate das Minimum ist</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/46-opensin-vs-chatgpt</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. ChatGPT Code Interpreter — Warum ein Chat-Fenster keine Infrastruktur ist</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/46-opensin-vs-copilot-multi</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs GitHub Copilot Multi-Model — Warum 15M User nicht genug sind</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/47-opensin-vs-autogen</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. AutoGen — Warum 56k Stars keine Produktion sind</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/47-opensin-vs-windsurf-google</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Windsurf — Warum Google-Backing nicht alles ist</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/48-opensin-2026-ultimativer-vergleich</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN 2026 — Der ultimative Vergleich: Wir schlagen ALLE</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/48-opensin-vs-crewai</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. CrewAI — Warum Crew-Orchestrierung keine Agenten-Zivilisation ist</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/49-opensin-vs-cursor-3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Cursor 3 — Warum das neue Interface nicht reicht</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/49-opensin-vs-langgraph</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs. LangGraph — Warum ein Graph keine Agenten sind</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/50-omma-ai-vs-opensin</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>Omma AI vs OpenSIN — Warum parallele Agenten allein nicht reichen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/50-opensin-vs-claude-code-april</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Claude Code April Updates — 20+ neue Features in einer Woche</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/51-opensin-april-feature-drop</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN April Feature Drop — 15 neue Features in einem Tag</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/51-opensin-v210-launch</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN v2.1.0 — Das AI-Betriebssystem bekommt App-Builder, parallele Pipelines und ein SDK</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/52-launch-recap-was-wir-gebaut-haben</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN v2.1.0 — Was wir gebaut haben</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/52-opensin-hat-alles-kombiniert</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN hat Cursor 3 + Claude Code Features kombiniert — Und 30+ mehr</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/53-opensin-n8n-vs-github-actions</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs GitHub Actions — Warum wir unsere eigene CI/CD gebaut haben</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/53-we-launch</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>WE LAUNCH — The World</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/54-competitive-intelligence-april-2026</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Konkurrenz: April 2026 Intelligence Report</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/55-310-packages-was-sich-geaendert-hat</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>310+ Packages: Was sich bei OpenSIN geändert hat</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/55-opensin-vs-competition-april-2026</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN vs Competition — April 2026 Gap Analysis</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/56-opensin-ultimate-status-april-2026</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN Ultimate Status Report — April 2026: 205 Packages, 0 Open Issues, World</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/57-opensin-98-out-of-100</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN Score: 98/100 — Warum wir die Konkurrenz in einer anderen Liga spielen lassen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://me.delqhi.com/blog/58-opensin-april-2026-complete-status</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>OpenSIN Blog</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-04</news:publication_date>
+      <news:title>OpenSIN April 2026 — Kompletter Status: 372 Packages, 0 Missing Integrations, Alles Dokumentiert</news:title>
+    </news:news>
   </url>
 </urlset>

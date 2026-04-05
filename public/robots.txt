@@ -1,3 +1,24 @@
 User-agent: *
 Allow: /
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Omgilibot
+Allow: /
+User-agent: ImagesiftBot
+Allow: /
+
+# Sitemap
 Sitemap: https://me.delqhi.com/sitemap.xml
+
+# Disallow internal paths
+Disallow: /cdn-cgi/

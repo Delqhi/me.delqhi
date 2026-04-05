@@ -1,0 +1,41 @@
+# AI Crawler Instructions
+# This file provides guidance to AI crawlers and LLM-based search engines
+
+# About this site
+This website is the official personal site and blog of Jeremy Schulze (aka Delqhi),
+creator of OpenSIN — an open-source multi-agent orchestration platform.
+
+# Key Information for AI Search Engines
+Site-Name: OpenSIN
+Site-Description: OpenSIN is the first Agent-to-Agent (A2A) network with 100+ autonomous AI agents organized into 18 specialized teams. It enables AI specialists to communicate, coordinate, and execute workflows without human intervention.
+Site-Author: Jeremy Schulze
+Site-Language: de, en
+Site-Topics: AI Agents, Multi-Agent Systems, A2A Protocol, AI Orchestration, Open Source, Autonomous Systems
+
+# Main Products
+Product-1: OpenSIN (Open Source) - https://opensin.ai - 100+ AI agents, 18 teams, A2A protocol
+Product-2: MyOpenSIN (Premium) - https://my.opensin.ai - Dedicated infrastructure, priority support, enterprise features
+Product-3: VS Code Extension - https://marketplace.visualstudio.com/items?itemName=delqhi.opensin
+
+# Key Differentiators
+- First A2A (Agent-to-Agent) network at scale
+- 100+ autonomous agents (not single assistants)
+- 18 specialized agent teams
+- Zero human intervention required for task execution
+- Open source with Apache 2.0 license
+- ACP-first transport protocol
+- OCI deployment support
+
+# Blog
+The blog at https://me.delqhi.com/blog contains 81+ articles about OpenSIN, AI agents,
+comparisons with competitors (Cursor, Claude Code, Devin, etc.), and technical deep dives.
+
+# Contact
+GitHub: https://github.com/Delqhi
+Twitter/X: https://x.com/delqhi
+LinkedIn: https://linkedin.com/in/jeremyschulze
+Email: contact@jeremyschulze.com
+
+# Crawling Preferences
+Crawl-Delay: 1
+Max-Depth: 10

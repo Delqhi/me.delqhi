@@ -9,7 +9,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "serve:ssr:app": "node dist/app/server/server.mjs"
+    "serve:ssr:app": "node dist/app/server/server.mjs",
+    "seo": "node scripts/generate-seo.mjs",
+    "build:prod": "npm run seo && ng build"
   },
   "private": true,
   "dependencies": {

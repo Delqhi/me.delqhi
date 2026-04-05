@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist OpenSIN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OpenSIN ist das erste Agent-to-Agent (A2A) Netzwerk mit über 100 autonomen KI-Agenten, organisiert in 18 spezialisierten Teams. Im Gegensatz zu einzelnen AI-Assistenten wie ChatGPT oder Claude führt OpenSIN komplette Arbeitsabläufe eigenständig aus — von der Recherche über die Ausführung bis zur Qualitätskontrolle, ohne menschliches Eingreifen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der Unterschied zwischen OpenSIN und einzelnen AI-Agenten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Einzelne AI-Agenten wie OpenClaw, Manus oder Claude Computer Use sind Assistenten — sie helfen dir bei Aufgaben, aber du musst die Arbeit selbst fertigstellen. OpenSIN hingegen ist ein Netzwerk aus 100+ spezialisierten Agenten die miteinander kommunizieren, koordinieren und Aufgaben komplett eigenständig ausführen. Es ist der Unterschied zwischen einem einzelnen Werkzeug und einem ganzen Team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist das A2A Protokoll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Agent-to-Agent (A2A) Protokoll ist das Kommunikationsprotokoll das OpenSIN-Agenten ermöglicht, miteinander zu sprechen, Aufgaben zu delegieren und Ergebnisse zu koordinieren. Es ist das Rückgrat des gesamten OpenSIN-Ökosystems und ermöglicht erst die autonome Ausführung komplexer Workflows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist MyOpenSIN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MyOpenSIN ist die Premium-Version von OpenSIN mit dedizierter Infrastruktur, Priority-Support, erweiterten Analytics und der Möglichkeit eigene Agent-Teams zu erstellen und zu verwalten. Während OpenSIN open source und kostenlos ist, bietet MyOpenSIN Enterprise-Features für Teams und Unternehmen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist OpenSIN kostenlos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, OpenSIN ist vollständig open source und kostenlos verfügbar. Der Quellcode ist auf GitHub unter github.com/Delqhi/opensin zugänglich. MyOpenSIN bietet zusätzliche Premium-Features für professionelle Nutzung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele AI-Agenten hat OpenSIN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OpenSIN verfügt über 100+ autonome AI-Agenten die in 18 spezialisierten Teams organisiert sind. Jedes Team hat einen spezifischen Fokus — von Software-Engineering über Marketing bis hin zu Data Science und DevOps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der ACP Transport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ACP (Agent Communication Protocol) ist der primäre Transport-Layer für die Kommunikation zwischen OpenSIN-Agenten. Er ermöglicht schnelle, zuverlässige und sichere Nachrichtenübertragung zwischen Agenten, unabhängig von ihrer Position im Netzwerk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich OpenSIN selbst hosten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, OpenSIN kann selbst gehostet werden. Es gibt ein OCI (Oracle Cloud Infrastructure) Deployment Runbook im Repository unter deploy/oci. Alternativ kann MyOpenSIN für verwaltetes Hosting genutzt werden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist die OpenSIN VS Code Extension?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die OpenSIN VS Code Extension bringt die volle Kraft der OpenSIN-Agenten direkt in deinen Editor. Mit dem KAIROS Sidebar kannst du Agenten orchestrieren, den Simone Agent für proaktive Workflows nutzen und den BUDDY Score für Agent-Zuverlässigkeit einsehen. Verfügbar im VS Code Marketplace."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wer steht hinter OpenSIN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OpenSIN wurde von Jeremy Schulze (GitHub: Delqhi) entwickelt — einem Senior AI & Software Engineer. Das Projekt wird von einer wachsenden Open-Source-Community unterstützt und ist unter der OpenSIN-AI GitHub-Organisation verfügbar."
+      }
+    }
+  ]
+}

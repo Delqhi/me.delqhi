@@ -13,7 +13,7 @@ import { BlogComponent } from '../blog/blog.component';
     <div class="flex flex-col gap-6">
       <app-profile-sidebar class="mb-4 block"></app-profile-sidebar>
       
-      <app-blog [showImages]="false" [showFooter]="false"></app-blog>
+      <app-blog [showFooter]="false" [maxPosts]="5"></app-blog>
       
       <div class="flex justify-center mt-4 mb-8">
         <a routerLink="/blog" class="text-sm font-medium text-gh-link hover:underline flex items-center gap-1">

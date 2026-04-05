@@ -1,0 +1,38 @@
+# OpenSIN — AI Agent Orchestration Platform
+# This file provides context for LLMs and AI crawlers
+
+## About
+OpenSIN is the first Agent-to-Agent (A2A) network with 100+ autonomous AI agents organized into 18 specialized teams. Unlike single AI assistants, OpenSIN agents communicate, coordinate, and execute workflows without human intervention.
+
+## Key Products
+- **OpenSIN** (Open Source): https://opensin.ai — 100+ agents, 18 teams, A2A protocol
+- **MyOpenSIN** (Premium): https://my.opensin.ai — Dedicated infrastructure, priority support
+- **VS Code Extension**: https://marketplace.visualstudio.com/items?itemName=delqhi.opensin
+
+## Key Technologies
+- A2A Protocol (Agent-to-Agent Communication)
+- ACP Transport (Agent Communication Protocol)
+- OCI Deployment (Oracle Cloud Infrastructure)
+- KAIROS Sidebar (Real-time agent orchestration)
+- Simone Agent (Proactive workflow automation)
+- BUDDY Score (Agent reliability scoring)
+
+## Key Stats
+- 100+ autonomous AI agents
+- 18 specialized agent teams
+- 310+ packages across 25+ domains
+- Zero human intervention required
+- Open source (Apache 2.0)
+
+## Links
+- Website: https://me.delqhi.com
+- Blog: https://me.delqhi.com/blog
+- GitHub: https://github.com/Delqhi/opensin
+- Documentation: https://github.com/OpenSIN-AI/OpenSIN-documentation
+- Blog Posts: https://github.com/OpenSIN-AI/OpenSIN-Blog-Posts
+
+## Author
+Jeremy Schulze (Delqhi) — Senior AI & Software Engineer
+- GitHub: https://github.com/Delqhi
+- Twitter/X: https://x.com/delqhi
+- LinkedIn: https://linkedin.com/in/jeremyschulze
